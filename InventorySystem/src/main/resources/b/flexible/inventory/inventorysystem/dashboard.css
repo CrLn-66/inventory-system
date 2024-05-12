@@ -1,0 +1,72 @@
+/* Overall Styling */
+.dashboard-card {
+    -fx-background-color: white;
+    -fx-padding: 20px;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 5);
+}
+
+.outOfStockCard {
+    -fx-text-fill: #e74c3c; /* Red color for Out of Stock */
+}
+
+.overStockCard {
+    -fx-text-fill: #f39c12; /* Orange color for Over Stock */
+}
+
+.availableProductCard {
+    -fx-text-fill: #2ecc71; /* Green color for Available Products */
+}
+
+/* Style for navigation menu buttons */
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+    -fx-border-color: transparent;
+    -fx-padding: 10 0 10 15;
+}
+
+/* Overall Sidebar */
+.sidebar {
+    -fx-background-color: #f5f5f5;
+    -fx-padding: 10px;
+}
+
+/* Label */
+.sidebar .label {
+   -fx-font-size: 20px;
+   -fx-font-weight: bold;
+   -fx-padding: 10px 0 0 10px;
+   -fx-text-fill: #444444; /* Darker text color */
+}
+
+/* Accordion Styling */
+.accordion {
+    -fx-background-color: transparent;
+   -fx-border-color: transparent;
+}
+
+.accordion .titled-pane > .title {
+     -fx-background-color: #e8eaed; /* Light background for titles */
+     -fx-text-fill: #333333; /* Dark text for titles */
+     -fx-padding: 8px 15px;
+}
+
+.accordion .titled-pane > .title:hover {
+     -fx-background-color: #d8dce0; /* Subtle hover effect */
+}
+
+.accordion .titled-pane > .content {
+    -fx-padding: 10px;
+}
+.accordion .titled-pane > .content .label {
+    -fx-background-color: transparent; /* Transparent background */
+    -fx-text-fill: #333333;           /* Dark text color */
+    -fx-font-size: 15px;
+    -fx-padding: 10px 15px;          /* Padding for button-like feel */
+    -fx-cursor: hand;         /* Occupy full width */
+}
+
+.accordion .titled-pane > .content .label:hover {
+    -fx-background-color: #e8eaed; /* Light hover effect */
+}

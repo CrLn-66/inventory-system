@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="root" prefHeight="450.0" prefWidth="1155.0" stylesheets="@dashboard.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="b.flexible.inventory.inventorysystem.HelloController">
+    <left>
+        <VBox prefHeight="450.0" prefWidth="249.0" style="-fx-background-color: #f5f5f5; -fx-padding: 10;">
+            <Label style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-padding: 10 0 0 10;" text="Inventory System"> </Label>
+         <Accordion>
+           <panes>
+             <TitledPane animated="false" text="Navigation">
+                  <content>
+                     <VBox prefHeight="139.0" prefWidth="205.0">
+                        <children>
+                           <Label prefHeight="40.0" prefWidth="146.0" text="Dashboard" />
+                           <Label fx:id="prod" prefHeight="29.0" prefWidth="129.0" text="Products" />
+                           <Label fx:id="cus" prefHeight="29.0" prefWidth="135.0" text="Customers" />
+                            <Label fx:id="pos" prefHeight="29.0" prefWidth="135.0" text="Point of Sale" />
+                        </children>
+                     </VBox>
+                  </content>
+             </TitledPane>
+
+             <TitledPane animated="false" prefHeight="172.0" prefWidth="227.0" text="Utility">
+                  <content>
+                     <VBox prefHeight="200.0" prefWidth="100.0">
+                        <children>
+                           <Label text="to be continue..." />
+                        </children>
+                     </VBox>
+                  </content>
+             </TitledPane>
+           </panes>
+         </Accordion>
+        </VBox>
+    </left>
+    <center>
+        <GridPane hgap="20.0" maxWidth="500.0" minWidth="500.0" prefHeight="400.0" prefWidth="569.0" style="-fx-padding: 20;" vgap="20">
+            <VBox prefHeight="180.0" prefWidth="250.0" styleClass="dashboard-card">
+                <Label style="-fx-font-size: 16px;" text="Total Products" />
+                <Label fx:id="total" style="-fx-font-size: 24px; -fx-text-fill: #3498db;" text="123" />
+            </VBox>
+            <VBox fx:id="availableProductCard" prefHeight="180.0" prefWidth="250.0" styleClass="dashboard-card" GridPane.columnIndex="1">
+                <Label style="-fx-font-size: 16px;" text="Available Products" />
+                <Label fx:id="avail" style="-fx-font-size: 24px; -fx-text-fill: #2ecc71;" text="98" />
+            </VBox>
+            <VBox fx:id="outOfStockCard" prefHeight="180.0" prefWidth="250.0" styleClass="dashboard-card" GridPane.rowIndex="1">
+                <Label style="-fx-font-size: 16px;" text="Out of Stock" />
+                <Label fx:id="oos" style="-fx-font-size: 24px; -fx-text-fill: #e74c3c;" text="5" />
+            </VBox>
+            <VBox fx:id="overStockCard" prefHeight="180.0" prefWidth="250.0" styleClass="dashboard-card" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                <Label style="-fx-font-size: 16px;" text="Over Stock" />
+                <Label fx:id="os" style="-fx-font-size: 24px; -fx-text-fill: #f39c12;" text="20" />
+            </VBox>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+
+        </GridPane>
+    </center>
+   <right>
+      <Pane prefHeight="400.0" prefWidth="397.0" BorderPane.alignment="CENTER">
+         <children>
+            <PieChart fx:id="myPieChart" layoutX="4.0" layoutY="15.0" prefHeight="423.0" prefWidth="388.0" />
+         </children>
+      </Pane>
+   </right>
+</BorderPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="root" prefHeight="450.0" prefWidth="498.0" stylesheets="@products.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="b.flexible.inventory.inventorysystem.ProductController">
+   <top>
+      <Label text="Manage Product" textAlignment="JUSTIFY" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="174.0" layoutY="71.0" prefHeight="25.0" prefWidth="129.0" text="Add Product" />
+            <TextField fx:id="name" layoutX="174.0" layoutY="96.0" promptText="Product Name" />
+            <TextField fx:id="price" layoutX="174.0" layoutY="131.0" promptText="Price" />
+            <TextField fx:id="max" layoutX="174.0" layoutY="168.0" promptText="Max Product" />
+            <Button fx:id="add" layoutX="174.0" layoutY="205.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" text="Add" />
+            <Label layoutX="174.0" layoutY="244.0" prefHeight="25.0" prefWidth="129.0" text="Remove Product" />
+            <TextField fx:id="id" layoutX="174.0" layoutY="269.0" promptText="Product ID" />
+            <Button fx:id="remove" layoutX="174.0" layoutY="303.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" text="Remove" />
+            <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Back" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

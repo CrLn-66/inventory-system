@@ -38,7 +38,7 @@ public class HelloController implements Initializable {
     private Label prod;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        DBConnection dbc = new DBConnection("viaduct.proxy.rlwy.net:27997","root", "UKsRSCDuMDgssuMGwxEBYFdFQxevsiBc","railway");
+        DBConnection dbc = new DBConnection("host","databasename", "passwprd","usernameata");
         dbc.connect();
         ObservableList<PieChart.Data> pieChartData = dbc.getPieData();
         myPieChart.setData(pieChartData);

@@ -32,7 +32,7 @@ public class POSController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        DBConnection dbc = new DBConnection("viaduct.proxy.rlwy.net:27997","root", "UKsRSCDuMDgssuMGwxEBYFdFQxevsiBc","railway");
+        DBConnection dbc = new DBConnection("host","databasename", "passwprd","usernameata");
         dbc.connect();
         AtomicInteger pric = new AtomicInteger();
         AtomicInteger level = new AtomicInteger();

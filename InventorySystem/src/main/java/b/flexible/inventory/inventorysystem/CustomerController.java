@@ -25,7 +25,7 @@ public class CustomerController implements Initializable {
     public Button add;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        DBConnection dbc = new DBConnection("viaduct.proxy.rlwy.net:27997","root", "UKsRSCDuMDgssuMGwxEBYFdFQxevsiBc","railway");
+        DBConnection dbc = new DBConnection("host","databasename", "passwprd","usernameata");
         dbc.connect();
         TableColumn<Customers, Integer> idColumn = new TableColumn<>("ID");
         idColumn.setCellValueFactory(new PropertyValueFactory<>("id"));

@@ -36,7 +36,7 @@ public class ProductController implements Initializable {
     public Button back;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        DBConnection dbc = new DBConnection("viaduct.proxy.rlwy.net:27997","root", "UKsRSCDuMDgssuMGwxEBYFdFQxevsiBc","railway");
+        DBConnection dbc = new DBConnection("host","databasename", "passwprd","usernameata");
         back.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent) {
